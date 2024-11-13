@@ -1,6 +1,7 @@
-![image](https://github.com/user-attachments/assets/ae37ac83-9b23-4c5c-a12b-30ad01a00eeb)
+![image](https://github.com/user-attachments/assets/336d6e8d-c03b-4cf0-9062-6485fe9878b7)
+
 
 https://hashcat.net/wiki/doku.php?id=example_hashes
-![image](https://github.com/user-attachments/assets/eb98e695-ade6-47c1-bd49-8408d4fd20dd)
+- `hashcat -m <hash_type> -a <attack_mode> hashfile wordlist`
 
 

@@ -25,7 +25,8 @@ ___
 - password hashes are stored in /etc/shadow
 - `$prefix$options$salt$hash`
   
-![image](https://github.com/user-attachments/assets/0cb447c6-63d2-42ef-b5e7-488ea3f587e7)
+![image](https://github.com/user-attachments/assets/1ccf68a1-fa73-4ce4-ab5e-d273401df079)
+
 
 ___
 ### Windows

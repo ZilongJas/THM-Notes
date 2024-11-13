@@ -11,7 +11,6 @@ ___
 - Diffie-Hellman: A key exchange method allowing two parties to securely generate a shared secret over an insecure channel, forming the basis of many encryption protocols.
 ___
 ### XOR Operation (exclusive OR)
-![image](https://github.com/user-attachments/assets/559250a9-cd33-44f9-80ae-40f76042c032)
 - similar to a truth table
 ___
 ### Modulo Operation (% or mod)

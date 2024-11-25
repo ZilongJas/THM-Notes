@@ -34,7 +34,7 @@ ___
 - `-oA` saves the output in 3 major formats at once so you don't have to rescan the target
 - `-oN` saves nmap result in a normal format
 - `oG` saves nmap ressult in a grepable format
-- `-A` agressive mode, scans for OS, service, traceroute, and scripts
+- `-A` aggressive mode, scans for OS, service, traceroute, and scripts
 - `-T5` increase speed at level 5, [0-5], 0 being slowest
 - `-p [port]` scan a specific port
 - `-p [port-port]` scan ports with a range

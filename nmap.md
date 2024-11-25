@@ -4,6 +4,16 @@
 - `-sS` TCP scan, sends a SYN packet but does not complete the handshake. More stealthy. Need more permissions
 - `-sU` UDP scan, scans for open UDP ports
 - `-sT` TCP scan, scans for open TCP ports, completes the handshake
+  - `-sN` TCP Null Scan: sends packets with no TCP flags
+    - open/filtered ports: no response
+    - closed ports: respond with RST
+  - `-sF` TCP FIN Scan: sends packets with only FIN flag set
+    - open/filtered ports: no response
+    - closed ports: respond with RST
+  - `-sX` TCP Xmas Scan: sneds packets with FIN,PSH,URG flags set
+    - open/filtered ports: no response
+    - closed ports: respond with RST
+    - more detectable
 - `O` detect target operating system
 - `sV` detect version of services
 - `v` verbose, more info, add more v's for more info
@@ -17,3 +27,4 @@
 - `-p-` scans all ports
 - `--script` activate a script from nmap scripting library
 - `--script=vuln` activate all scripts in vuln category
+- 

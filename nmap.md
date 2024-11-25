@@ -1,3 +1,8 @@
+### tips for protecting against nmap
+- block unused ports, it minimizes the information exposed to the attacker, reducing resource strain and good security practice. 
+___
+
+
 ### nmap things for scanning
 - There are 65535 ports available
 - `nmap -h` or `man nmap` for help
@@ -28,3 +33,29 @@
 - `--script` activate a script from nmap scripting library
 - `--script=vuln` activate all scripts in vuln category
 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

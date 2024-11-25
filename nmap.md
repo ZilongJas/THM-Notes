@@ -8,6 +8,9 @@ ___
 - `-sS` TCP scan, sends a SYN packet but does not complete the handshake. More stealthy. Need more permissions
   - half-life/stealth scans gives nmap CAP_NET_RAW, CAP_NET_ADMIN and CAP_NET_BIND_SERVICE capabilities so some NSE scripts might not work 
 - `-sU` UDP scan, scans for open UDP ports
+  - open/filtered: no response
+  - closed port: target responds with an ICMP (ping) packet
+  - very slow, good to use `--top-ports [#]` to scan the top # of common used UDP ports
 - `-sT` TCP scan, scans for open TCP ports, completes the handshake
   - `-sN` TCP Null Scan: sends packets with no TCP flags
     - open/filtered ports: no response
@@ -19,6 +22,7 @@ ___
     - open/filtered ports: no response
     - closed ports: respond with RST
     - more detectable
+- NULL, FIN, Xmas scans are used to evade firewall but most modern systems are not effective against, windows may respond to it with RST flag 
 - `O` detect target operating system
 - `sV` detect version of services
 - `v` verbose, more info, add more v's for more info

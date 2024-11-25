@@ -1,0 +1,18 @@
+### nmap things for scanning
+- There are 65535 ports available
+- `nmap -h` or `man nmap` for help
+- `-sS` TCP scan, sends a SYN packet but does not complete the handshake. More stealthy. Need more permissions
+- `-sU` UDP scan, scans for open UDP ports
+- `-sT` TCP scan, scans for open TCP ports, completes the handshake
+- `O` detect target operating system
+- `sV` detect version of services
+- `v` verbose, more info, add more v's for more info
+- `-oA` saves the output in 3 major formats at once so you don't have to rescan the target
+- `-oN` saves nmap result in a normal format
+- `oG` saves nmap ressult in a grepable format
+- `-A` agressive mode, scans for OS, service, traceroute, and scripts
+- `-T5` increase speed at level 5, [0-5], 0 being slowest
+- `-p [port]` scan a specific port
+- `-p [port-port]` scan ports with a range
+- `-p-` scans all ports
+- 

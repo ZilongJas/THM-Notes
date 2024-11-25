@@ -3,10 +3,10 @@
 ___
 ### network quick tips
 - There are 65535 ports available
-- `-sn` ping sweep, sends an ICMP packet to each possible IP address to see which one is online, not always accurate but is a baseline
+- `-sn` ping sweep, sends an ICMP packet to each possible IP address to see which one is online, not always accurate but is a baseline (ARP)
 - CIDR: `/8` `x.0.0.0`
 - CIDR: `/16` `x.x.0.0`
-- CIDR: `24` `x.x.x.0`
+- CIDR: `/24` `x.x.x.0`
 ___
 ### nmap scans
 - `nmap -h` or `man nmap` for help
@@ -42,12 +42,36 @@ ___
 - `--script` activate a script from nmap scripting library
 - `--script=vuln` activate all scripts in vuln category
 ___
-### NSE Scripts
-- 
-
-
-
-
+### NSE Scripts (Nmap Scripting Engine)
+- written in Lua programming language
+#### Categories
+- `safe` won't affect the target
+- `intrustive` not safe, likely to affect the target
+- `vuln` scans for vulnerabilities
+- `exploit` attempt to exploit a vulnerability
+- `auth` attempt to bypass authentication for running services
+- `brute` attempt to bruteforce credentials for running services
+- `discovery` attempt to query running services for further information about the network
+- More: https://nmap.org/book/nse-usage.html
+- `--script=<script-name>` run a specific script, works with categories and is separated by commas if more than one
+- `--script-args` some scripts require arguments so use this.
+Example: 
+```
+nmap -p 80 <ip> --script http-put --script-args http-put.url='/uploads/rootme.php',http-put.file='/tmp/rootme.php'
+```
+- more: https://nmap.org/nsedoc/
+- finding scripts locally, its in `/usr/share/nmap/scripts/scripts.db`
+___
+### Firewall evasion
+- window host with a default firewall will block all ICMP packets, nmap sends ICMP packets by default before scanning so with a firewall configured this way, nmap will see it as dead or won't scan it at all
+- `-Pn` do not ping the host before scanning
+- if you are on the local network, just use ARP requests
+- `-f` splitting packets into smaller pieces, making it less likely for the packets to be detected by a firewall or IDS
+- `--mtu [#]` more control over the size of the packets, accepts a max transmission unit size for packets to be sent. Must be multiple of 8
+- `--scan-delay [time]ms` add a delay between packets sent, avoids time-based firewall/IDS or network is unstable
+- `--badsum` generate invalid checksum for packets, firewalls might respond without checking checksum for the packets, so it will determine the presence of a firewall/IDS
+- more: https://nmap.org/book/man-bypass-firewalls-ids.html
+  
 
 
 

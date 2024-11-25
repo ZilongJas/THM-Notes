@@ -15,4 +15,5 @@
 - `-p [port]` scan a specific port
 - `-p [port-port]` scan ports with a range
 - `-p-` scans all ports
-- 
+- `--script` activate a script from nmap scripting library
+- `--script=vuln` activate all scripts in vuln category

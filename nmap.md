@@ -2,19 +2,19 @@
 - block unused ports, it minimizes the information exposed to the attacker, reducing resource strain and good security practice. 
 ___
 
-
 ### nmap things for scanning
 - There are 65535 ports available
 - `nmap -h` or `man nmap` for help
 - `-sS` TCP scan, sends a SYN packet but does not complete the handshake. More stealthy. Need more permissions
+  - half-life/stealth scans gives nmap CAP_NET_RAW, CAP_NET_ADMIN and CAP_NET_BIND_SERVICE capabilities so some NSE scripts might not work 
 - `-sU` UDP scan, scans for open UDP ports
 - `-sT` TCP scan, scans for open TCP ports, completes the handshake
   - `-sN` TCP Null Scan: sends packets with no TCP flags
     - open/filtered ports: no response
-    - closed ports: respond with RST
+    - closed ports: respond with RST (reset)
   - `-sF` TCP FIN Scan: sends packets with only FIN flag set
     - open/filtered ports: no response
-    - closed ports: respond with RST
+    - closed ports: respond with RST 
   - `-sX` TCP Xmas Scan: sneds packets with FIN,PSH,URG flags set
     - open/filtered ports: no response
     - closed ports: respond with RST

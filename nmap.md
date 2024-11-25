@@ -1,9 +1,14 @@
-### tips for protecting against nmap
-- block unused ports, it minimizes the information exposed to the attacker, reducing resource strain and good security practice. 
+### tips for protecting against scans
+- block unused ports using a firewall, it minimizes the information exposed to the attacker, reducing resource strain and good security practice
 ___
-
-### nmap things for scanning
+### network quick tips
 - There are 65535 ports available
+- `-sn` ping sweep, sends an ICMP packet to each possible IP address to see which one is online, not always accurate but is a baseline
+- CIDR: `/8` `x.0.0.0`
+- CIDR: `/16` `x.x.0.0`
+- CIDR: `24` `x.x.x.0`
+___
+### nmap scans
 - `nmap -h` or `man nmap` for help
 - `-sS` TCP scan, sends a SYN packet but does not complete the handshake. More stealthy. Need more permissions
   - half-life/stealth scans gives nmap CAP_NET_RAW, CAP_NET_ADMIN and CAP_NET_BIND_SERVICE capabilities so some NSE scripts might not work 
@@ -36,10 +41,9 @@ ___
 - `-p-` scans all ports
 - `--script` activate a script from nmap scripting library
 - `--script=vuln` activate all scripts in vuln category
+___
+### NSE Scripts
 - 
-
-
-
 
 
 

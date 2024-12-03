@@ -1,14 +1,24 @@
 ### tips for protecting against scans
+
 - block unused ports using a firewall, it minimizes the information exposed to the attacker, reducing resource strain and good security practice
+
+  
 ___
+
+
 ### network quick tips
+
 - There are 65535 ports available
 - `-sn` ping sweep, sends an ICMP packet to each possible IP address to see which one is online, not always accurate but is a baseline (ARP)
 - CIDR: `/8` `x.0.0.0`
 - CIDR: `/16` `x.x.0.0`
 - CIDR: `/24` `x.x.x.0`
+  
 ___
+
+
 ### nmap scans
+
 - `nmap -h` or `man nmap` for help
 - `-sS` TCP scan, sends a SYN packet but does not complete the handshake. More stealthy. Need more permissions
   - half-life/stealth scans gives nmap CAP_NET_RAW, CAP_NET_ADMIN and CAP_NET_BIND_SERVICE capabilities so some NSE scripts might not work 
@@ -41,10 +51,16 @@ ___
 - `-p-` scans all ports
 - `--script` activate a script from nmap scripting library
 - `--script=vuln` activate all scripts in vuln category
+  
 ___
+
+
 ### NSE Scripts (Nmap Scripting Engine)
+
 - written in Lua programming language
+  
 #### Categories
+
 - `safe` won't affect the target
 - `intrustive` not safe, likely to affect the target
 - `vuln` scans for vulnerabilities
@@ -55,14 +71,20 @@ ___
 - More: https://nmap.org/book/nse-usage.html
 - `--script=<script-name>` run a specific script, works with categories and is separated by commas if more than one
 - `--script-args` some scripts require arguments so use this.
+  
 Example: 
+
 ```
 nmap -p 80 <ip> --script http-put --script-args http-put.url='/uploads/rootme.php',http-put.file='/tmp/rootme.php'
 ```
+
 - more: https://nmap.org/nsedoc/
 - finding scripts locally, its in `/usr/share/nmap/scripts/scripts.db`
+  
 ___
+
 ### Firewall evasion
+
 - window host with a default firewall will block all ICMP packets, nmap sends ICMP packets by default before scanning so with a firewall configured this way, nmap will see it as dead or won't scan it at all
 - `-Pn` do not ping the host before scanning
 - if you are on the local network, just use ARP requests

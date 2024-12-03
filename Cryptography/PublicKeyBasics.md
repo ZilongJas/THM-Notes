@@ -19,4 +19,4 @@ ___
 - PGP stands for Pretty Good Privacy. It’s software that implements encryption for encrypting files, performing digital signing, and more.
 -  GnuPG or GPG is an open-source implementation of the OpenPGP standard.
 
-[Back](README.md)
+[Back](../README.md)

@@ -21,6 +21,7 @@
 - [Tcpdump](Networking/Tcpdump.md)
 - [Wireshark](Networking/Wireshark.md)
 - [Nmap_Intro](Networking/nmap_intro.md)
+- [Nmap_Advanced](nmap.md)
 
 ___
 

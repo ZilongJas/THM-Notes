@@ -26,6 +26,6 @@
 
 ___
 
-[Back](README.md)
+[Go Top](README.md)
 
 Disclaimer: This repository is intended solely for educational and ethical purposes. Unauthorized use of these techniques is illegal and strictly prohibited. The author is not responsible for any misuse or damage resulting from the information provided. Please ensure compliance with all applicable laws and obtain proper authorization before conducting any security testing.

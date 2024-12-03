@@ -1,21 +1,21 @@
 # THM Notes
 
-**Table of Contents:**
+## Table of Contents
 
-## Cryptography
+### Cryptography
 - [Basics](Cryptography/Basics.md)
 - [HashingBasics](Cryptography/HashingBasics.md)
 - [HashCat](Cryptography/HashCat.md)
 - [JohnTheRipper](Cryptography/JohnTheRipper.md)
 - [PublicKeyBasics](Cryptography/PublicKeyBasics.md)
 
-## Exploitation
+### Exploitation
 - [MonikerLinkLab](Exploitation/MonikerLinkLab.md)
 - [Metasploit-Intro](Exploitation/Metasploit-Intro.md)
 - [Exploitation](Exploitation/Exploitation.md)
 - [Blue](Exploitation/Blue.md)
 
-## Networking
+### Networking
 - [Concepts](Networking/Concepts.md)
 - [CoreProtocols](Networking/CoreProtocols.md)
 - [Essentials](Networking/Essentials.md)

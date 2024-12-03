@@ -1,5 +1,3 @@
-# THM Notes
-
 ## Table of Contents
 
 ### Cryptography

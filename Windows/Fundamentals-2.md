@@ -21,10 +21,18 @@
   - Startup: use task manager instead (enable/disable) startup programs
   - Tools: configure the OS further
 
-### Change UAC Settings
+### Computer Management
 
-- 
+- `compmgmt` is the utility
 
+![image](https://github.com/user-attachments/assets/bf0068b9-ee19-4df1-9129-79b6b54c2b69)
+
+
+- System Tools:
+  - Task Scheduler: create and manage common tasks that our computer will carry out automatically at the times we specifiy.
+    - Support event-based triggers (user login)
+    - not the same as cron on unix systems but similar
+  - Event Viewer: 
 
 
 

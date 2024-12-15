@@ -32,5 +32,3 @@ port number ranges between 1-65535
 - UDP: Fast, but unreliable since it skips checks. (EX: Streaming, gaming, online calls)
 - TCP: Ensures data gets to where it's going, in the right order. It sets up a connection, checks if each chunk of data arrives, and resends any that get lost.
 
-
-[Back](../CyberSecurity101.md)

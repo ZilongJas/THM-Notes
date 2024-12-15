@@ -46,7 +46,3 @@ ___
 ### IMAP (Internet Message Access Protocol)
 - TCP port 143 by default
 - use more storage as email is kept on the server and synchronized across the email clients.
-
-[Back](../CyberSecurity101.md)
-
-

@@ -2,5 +2,3 @@
 
 https://hashcat.net/wiki/doku.php?id=example_hashes
 - `hashcat -m <hash_type> -a <attack_mode> hashfile wordlist`
-
-[Back](../CyberSecurity101.md)

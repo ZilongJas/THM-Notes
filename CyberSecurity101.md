@@ -19,7 +19,6 @@
 - [Tcpdump](Networking/Tcpdump.md)
 - [Wireshark](Networking/Wireshark.md)
 - [Nmap_Intro](Networking/nmap_intro.md)
-- [Nmap_Advanced](nmap.md)
 
 ### Windows
 - [Fundamentals-1](Windows/Fundamentals-1.md)

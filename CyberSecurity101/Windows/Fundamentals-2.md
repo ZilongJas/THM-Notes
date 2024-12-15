@@ -33,19 +33,16 @@
     - Support event-based triggers (user login)
     - not the same as cron on unix systems but similar
   - Event Viewer: view events that have occurred on the computer. used for diagnose problems
-    
-![five-event-types](https://github.com/user-attachments/assets/07a856fe-506c-41b0-9c8f-a17f10d40737)
-
   - Shared Folders: a complete list of shares and folders shared that others can connect to
     - sessions: a list of users who are currently connected to the shares
     - open files: folders/files that connected users can access will list here
-  - Local Users and Groups: just lusrmgr.msc
+  - Local Users and Groups: just `lusrmgr.msc`
   - Performance: `perfmon`
     - used to view performance data in real time or from a log file. good for troubleshooting
-    - Device Manager: view and configure the hardware
-    - Storage: setting up drives, partitioning, change drive letter etc..
-    - Services and Applications: view properties for services
-        - WMI: allows scripting languages to manage windows
+  - Device Manager: view and configure the hardware
+- Storage: setting up drives, partitioning, change drive letter etc..
+- Services and Applications: view properties for services
+  - WMI: allows scripting languages to manage windows
 
 
 

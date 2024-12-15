@@ -52,5 +52,3 @@ ___
 
 - HMAC (Keyed-Hash Message Authentication Code)
   - a type of message authentication code (MAC) that uses a cryptographic hash function in combination with a secret key to verify the authenticity and integrity of data.
-
-[Back](../CyberSecurity101.md)

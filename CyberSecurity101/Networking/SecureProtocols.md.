@@ -45,5 +45,3 @@ ___
 ### FTPS vs SFTP
 - SFTP is based on SSH (port 22)
 - FTPS is based on TLS (port 990)
-
-[Back](../CyberSecurity101.md)

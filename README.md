@@ -6,34 +6,8 @@ LATEST BADGE UPDATE DATE: 12/12/2024
 ![Boom1](https://github.com/user-attachments/assets/469d8eed-8583-4702-8c3d-df651e1c5506) 
 
 
-### Cryptography
-- [Basics](Cryptography/Basics.md)
-- [HashingBasics](Cryptography/HashingBasics.md)
-- [HashCat](Cryptography/HashCat.md)
-- [JohnTheRipper](Cryptography/JohnTheRipper.md)
-- [PublicKeyBasics](Cryptography/PublicKeyBasics.md)
+- [Cyber Security 101](CyberSecurity101.md)
 
-### Exploitation
-- [MonikerLinkLab](Exploitation/MonikerLinkLab.md)
-- [Metasploit-Intro](Exploitation/Metasploit-Intro.md)
-- [Exploitation](Exploitation/Exploitation.md)
-- [Blue](Exploitation/Blue.md)
-
-### Networking
-- [Concepts](Networking/Concepts.md)
-- [CoreProtocols](Networking/CoreProtocols.md)
-- [Essentials](Networking/Essentials.md)
-- [SecureProtocols](Networking/SecureProtocols.md)
-- [Tcpdump](Networking/Tcpdump.md)
-- [Wireshark](Networking/Wireshark.md)
-- [Nmap_Intro](Networking/nmap_intro.md)
-- [Nmap_Advanced](nmap.md)
-
-### Windows
-- [Fundamentals-1](Windows/Fundamentals-1.md)
-- [Fundamentals-2](Windows/Fundamentals-2.md)
-- [Fundamentals-3](Windows/Fundamentals-3.md)
-- [ActiveDirectory](Windows/ActiveDirectory.md)
 
 
 ___

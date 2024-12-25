@@ -1,9 +1,7 @@
 ## Table of Contents
 
 
-LATEST BADGE UPDATE DATE: 12/12/2024
-
-![Boom1](https://github.com/user-attachments/assets/469d8eed-8583-4702-8c3d-df651e1c5506) 
+Username: Boom1
 
 
 - [Cyber Security 101](CyberSecurity101/CyberSecurity101.md) 

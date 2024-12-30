@@ -27,3 +27,5 @@
 - [Fundamentals-2](Windows/Fundamentals-2.md)
 - [Fundamentals-3](Windows/Fundamentals-3.md)
 - [ActiveDirectory](Windows/ActiveDirectory.md)
+- [Windows Command Line](Windows/Windows-Command-Line.md)
+- [PowerShell](Windows/PowerShell.md)

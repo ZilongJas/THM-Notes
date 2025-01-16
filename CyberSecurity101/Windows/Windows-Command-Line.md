@@ -20,3 +20,9 @@
   - `more` : view longer text files (less on linux)
 
 `copy` : copy files from one location to another
+
+`tasklist` : list running processes
+
+  - `tasklist /?` : help
+
+`taskkill /PID [PID]` : kill process
